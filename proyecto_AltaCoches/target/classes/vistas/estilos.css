@@ -1,0 +1,100 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+}
+
+.root {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-color: #C8102E; 
+    -fx-text-fill: white; 
+    -fx-font-size: 14px;
+    -fx-padding: 15px 30px;
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 170px;
+}
+
+.contennedorimagen{
+    -fx-background-image: url("/img/vehiculos.png");
+    -fx-background-size: cover;
+    -fx-background-position:center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+.button:hover {
+    -fx-background-color: #E81123; 
+    -fx-border-color: white;
+}
+
+.button:pressed {
+    -fx-background-color: #A00E25;
+}
+
+.label {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}
+
+.color-picker {
+    -fx-background-color: black;
+    
+}
+
+.coloresPrincipal {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+    
+}
+
+.botonesNormales {
+    -fx-background-color: #C8102E; 
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-padding: 10px 15px; 
+    -fx-border-color: transparent;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-pref-width: 120px; 
+    -fx-pref-height: 40px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.6), 10, 0.5, 0, 0);
+}
+
+.botonesNormales:hover {
+    -fx-background-color: #E81123; 
+}
+
+.botonesNormales:pressed {
+    -fx-background-color: #A00E25; 
+}
+
+.table-view {
+    -fx-background-color: black;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #C8102E; /* Rojo intenso */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* Texto en blanco */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
