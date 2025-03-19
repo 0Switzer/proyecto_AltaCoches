@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VerCochesController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@estilos.css" />
+          </stylesheets>
+         <children>
+            <ImageView fx:id="imagen" fitHeight="209.0" fitWidth="350.0" layoutX="434.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="436.0" layoutY="167.0" text="Matriculación" />
+            <Label layoutX="436.0" layoutY="209.0" text="Precio" />
+            <Label layoutX="436.0" layoutY="83.0" text="Modelo" />
+            <Label layoutX="436.0" layoutY="125.0" text="Color" />
+            <Label layoutX="95.0" layoutY="18.0" text="Ver coches" />
+            <TextField fx:id="campoModelo" disable="true" editable="false" layoutX="556.0" layoutY="79.0" />
+            <TextField fx:id="campoColor" disable="true" editable="false" layoutX="556.0" layoutY="121.0" />
+            <TextField fx:id="campoMatriculacion" disable="true" editable="false" layoutX="556.0" layoutY="163.0" />
+            <TextField fx:id="campoPrecio" disable="true" editable="false" layoutX="556.0" layoutY="205.0" />
+            <TableView fx:id="tablaCoches" layoutX="95.0" layoutY="60.0" onMouseClicked="#seleccionarCoche" prefHeight="401.0" prefWidth="297.0">
+              <columns>
+                <TableColumn fx:id="columnaModelo" editable="false" prefWidth="148.66665267944336" resizable="false" text="Modelo" />
+                <TableColumn fx:id="columnaPrecio" editable="false" prefWidth="147.33335876464844" resizable="false" text="Precio" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
